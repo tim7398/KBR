@@ -4,7 +4,7 @@ import org.junit.Test;
 public class Testing {
   @Test
   public void evaluatesRectangle() {
-    Rectangle r = new Rectangle(5,6);
+    Shape r = new Rectangle(5,6);
     double perimeter = r.getPerimeter();
     assertEquals(22, perimeter,0);
 
@@ -14,7 +14,7 @@ public class Testing {
 
   @Test
   public void evaluatesCircle() {
-    Circle c= new Circle(6);
+    Shape c= new Circle(6);
     double sum = c.getPerimeter();
     assertEquals(6*Math.PI, sum,0);
 
@@ -25,7 +25,7 @@ public class Testing {
 
    @Test
   public void evaluatesTriangle() {
-    Triangle t = new Triangle(3,4,5);
+    Shape t = new Triangle(3,4,5);
     double sum = t.getPerimeter();
     assertEquals(12, sum,0);
 
